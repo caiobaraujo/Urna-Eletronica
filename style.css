@@ -164,3 +164,15 @@ body {
   border-top: 2px solid #000;
   padding-left: 10px;
 }
+
+.aviso-grande {
+  font-size: 30px;
+}
+
+.aviso-gigante {
+  font-size: 60px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
