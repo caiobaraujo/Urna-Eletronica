@@ -37,8 +37,8 @@ let etapas = [
         partido: 'QWERTY',
         vice: 'Zul',
         fotos: [
-          { url: 'pessoa1.jpg', legenda: 'Prefeito' },
-          { url: 'pessoa2.jpg', legenda: 'Vice-Prefeito', small: true },
+          { url: 'pessoa6.jpg', legenda: 'Prefeito' },
+          { url: 'pessoa1.jpg', legenda: 'Vice-Prefeito', small: true },
         ],
       },
     ],

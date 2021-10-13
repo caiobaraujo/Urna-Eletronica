@@ -68,6 +68,9 @@ function atualizaInterface() {
 
 function clicou(num) {
   let elNumero = document.querySelector('.numero.pisca');
+
+  let music2 = new Audio('somUrna/somTecla.mp3');
+  music2.play();
   if (elNumero !== null) {
     elNumero.innerHTML = num;
     numero = `${numero}${num}`;
@@ -97,11 +100,13 @@ function corrige() {
   comecarEtapa();
 }
 
-// pode salvar o voto, mandar ele para um web service, ou banco de dados, etc
+// depois salvar os votos em json ou e banco de dados
 function confirma() {
   let etapa = etapas[etapaAtual];
 
   let votoConfirmado = false;
+
+  let music = new Audio('somUrna/somConfirma.mp3');
 
   if (votoBranco === true) {
     votoConfirmado = true;
@@ -109,12 +114,15 @@ function confirma() {
       etapa: etapas[etapaAtual].titulo,
       voto: 'branco',
     });
+
+    music.play();
   } else if (numero.length === etapa.numeros) {
     votoConfirmado = true;
     votos.push({
       etapa: etapas[etapaAtual].titulo,
       voto: numero,
     });
+    music.play();
   }
 
   if (votoConfirmado) {

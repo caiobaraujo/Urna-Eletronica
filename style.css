@@ -114,6 +114,7 @@ body {
 
 .numero {
   display: inline-block;
+
   height: 40px;
   width: 30px;
   border: 1px solid #000;
